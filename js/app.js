@@ -10,11 +10,6 @@ const buttonSearch = document.getElementById("sub");
 const inputForm = document.getElementById('form');
 
 
-
-/*const geoKey = '7e8d703067d7421c9650f0331796a3ac';
-const mapBoxToken = 'pk.eyJ1IjoiZGlja2Vuc3giLCJhIjoiY2wzbHM5ZDA4MDJqNzNjcGpva240MzRxMSJ9.ecWQfsRnhJFlOayiC3srvw';
-*/
-
 const url = `https://ipgeolocation.abstractapi.com/v1/?api_key=${geoKey}`;
 const urlSearch = 'https://ipgeolocation.abstractapi.com/v1/?api_key=';
 const ipValid = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
