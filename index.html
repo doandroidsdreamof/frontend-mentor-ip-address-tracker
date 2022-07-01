@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="container__header">
+        <h1 class="container__header__head container__header__head--white">IP Address Tracker</h1>
+        <form id="form" class="container__header__form">
+          <input type="text" class="container__header__form__input" placeholder="Search for any IP address or domain">
+          <button id="sub" class="container__header__form__input__button"></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container2">
+      <div class="container2__box1">
+        <h3 class="container2__box1__head container2__box__head--gray border">IP Address</h3>
+        <p class="container2__ip" id="ip"></p>
+      </div>
+      <div class="container2__box2">
+        <h3 class="container2__box2__head container2__box__head--gray border">Location</h3>
+        <p class="container2__location" id="location"></p>
+      </div>
+      <div class="container2__box3">
+        <h3 class="container2__box3__head container2__box__head--gray border">Timezone</h3>
+        <p class="container2__timezone" id="timezone"></p>
+      </div>
+      <div class="container2__box4">
+        <h3 class="container2__box4__head container2__box__head--gray">ISP</h3>
+        <p class="container2__isp" id="isp"></p>
+      </div>
+    </div>
+  <div id="map"></div>
+</main>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/apikey.js"></script>
+</body>
+</html>
