@@ -28,4 +28,4 @@ Users should be able to:
 - JavaScript
 - Abstract IP (geolocation API)
 - Leaflet (map API)
-- Mapbox Api
+- Mapbox API
